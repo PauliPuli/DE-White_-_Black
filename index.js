@@ -10,12 +10,19 @@ app.listen(3002, () => {
     `El servidor está inicializando en el puerto http://localhost:${PORT}`
   );
 });
-
-
-
+// app.get("/", (req, res) => {
+//     res.send("Welcome");
+//   });
 //Midleware
+
+app.use(express.static("views"));
 app.use(express.static("assets"));
 
-app.get("/", (req, res) => {
-    res.sendFile("/index.html");
-  });
+
+app.get('/', (req, res)=>{
+    res.sendFile('/index.html');
+})
+
+
+
+
