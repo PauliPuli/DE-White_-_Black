@@ -11,17 +11,23 @@
   </head>
   <body>
     <header>
-      <h2 class="title">Black and white</h2>
+      <h2 class="title"><span class="black">Black</span> and white</h2>
     </header>
-    <section>
-        <div>
+    <section class="convertidor">
+        <div class="descripcion">
             <p>Redimensiona y transforma tus imágenes a blanco y negro</p>
         </div>
         <div>
-      <form>
-        <label for="cargar">Imagen URL:</label>
-        <input id="cargar" type="text"/>
-        <button class="btn">Subir imagen al servidor</button>
+      <form action="/cargar">
+        <div>
+        <label for="imagen" class="label">Imagen URL</label>
+      </div>
+      <div>
+        <input name="imagen" id="imagen" type="text"/>
+      </div>
+      <div>
+        <button type="submit" class="btn">Subir imagen al servidor</button>
+      </div>
       </form>
     </div>
     </section>

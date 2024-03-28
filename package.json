@@ -7,7 +7,7 @@
     "start": "node --watch index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Paulina San Martín",
   "license": "MIT",
   "dependencies": {
     "express": "^4.19.2",
